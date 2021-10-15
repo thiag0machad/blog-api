@@ -1,7 +1,7 @@
 {
-  "name": "gravacao",
+  "name": "api-blog",
   "version": "1.0.0",
-  "description": "API GraphQL com Prisma/Nexus e MySQL",
+  "description": "API GraphQL com Prisma/Nexus e PostgreSQL",
   "main": ".src/index.js",
   "scripts": {
     "start": "nodemon ./src/index.js"
@@ -10,8 +10,11 @@
   "author": "Alura",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^3.2.1",
     "apollo-server": "^3.4.0",
     "graphql": "^15.6.1",
+    "nexus": "^1.1.0",
+    "nexus-plugin-prisma": "^0.35.0",
     "nodemon": "^2.0.13",
     "pg": "^8.7.1",
     "prisma": "^3.2.1"
