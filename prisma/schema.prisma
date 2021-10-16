@@ -11,10 +11,10 @@ model Post {
   id        Int      @id @default(autoincrement())
   titulo    String   @db.VarChar(255)
   conteudo  String
-  autorid   Int
+  autorId   Int
   publicado Boolean  @default(false)
-  createdat DateTime @default(now()) @db.Timestamp(6)
-  autor     User     @relation(fields: [autorid], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  autor     User     @relation(fields: [autorId], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
   Review Review[]
   @@map(name: "posts")
@@ -24,7 +24,7 @@ model User {
   id        Int      @id @default(autoincrement())
   nome      String   @db.VarChar(255)
   email     String   @db.VarChar(255)
-  createdat DateTime @default(now()) @db.Timestamp(6)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
   posts     Post[]
 
   Review Review[]

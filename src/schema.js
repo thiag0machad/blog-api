@@ -19,9 +19,9 @@ const Post = objectType({
     t.model.id()
     t.model.titulo()
     t.model.conteudo()
-    t.model.autorid()
+    t.model.autorId()
     t.model.publicado()
-    t.model.createdat()
+    t.model.createdAt()
     t.model.autor()
   },
 })

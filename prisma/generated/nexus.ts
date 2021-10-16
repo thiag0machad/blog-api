@@ -38,9 +38,9 @@ export interface NexusGenScalars {
 
 export interface NexusGenObjects {
   Post: { // root type
-    autorid: number; // Int!
+    autorId: number; // Int!
     conteudo: string; // String!
-    createdat: NexusGenScalars['DateTime']; // DateTime!
+    createdAt: NexusGenScalars['DateTime']; // DateTime!
     id: number; // Int!
     publicado: boolean; // Boolean!
     titulo: string; // String!
@@ -54,6 +54,7 @@ export interface NexusGenObjects {
     reviewerId: number; // Int!
   }
   User: { // root type
+    createdAt: NexusGenScalars['DateTime']; // DateTime!
     email: string; // String!
     id: number; // Int!
     nome: string; // String!
@@ -73,9 +74,9 @@ export type NexusGenAllTypes = NexusGenRootTypes & NexusGenScalars
 export interface NexusGenFieldTypes {
   Post: { // field return type
     autor: NexusGenRootTypes['User']; // User!
-    autorid: number; // Int!
+    autorId: number; // Int!
     conteudo: string; // String!
-    createdat: NexusGenScalars['DateTime']; // DateTime!
+    createdAt: NexusGenScalars['DateTime']; // DateTime!
     id: number; // Int!
     publicado: boolean; // Boolean!
     titulo: string; // String!
@@ -93,6 +94,7 @@ export interface NexusGenFieldTypes {
     reviewerId: number; // Int!
   }
   User: { // field return type
+    createdAt: NexusGenScalars['DateTime']; // DateTime!
     email: string; // String!
     id: number; // Int!
     nome: string; // String!
@@ -103,9 +105,9 @@ export interface NexusGenFieldTypes {
 export interface NexusGenFieldTypeNames {
   Post: { // field return type name
     autor: 'User'
-    autorid: 'Int'
+    autorId: 'Int'
     conteudo: 'String'
-    createdat: 'DateTime'
+    createdAt: 'DateTime'
     id: 'Int'
     publicado: 'Boolean'
     titulo: 'String'
@@ -123,6 +125,7 @@ export interface NexusGenFieldTypeNames {
     reviewerId: 'Int'
   }
   User: { // field return type name
+    createdAt: 'DateTime'
     email: 'String'
     id: 'Int'
     nome: 'String'
