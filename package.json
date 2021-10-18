@@ -1,7 +1,7 @@
 {
   "name": "api-blog",
   "version": "1.0.0",
-  "description": "API GraphQL com Prisma/Nexus e PostgreSQL",
+  "description": "",
   "main": ".src/index.js",
   "scripts": {
     "start": "nodemon ./src/index.js"
