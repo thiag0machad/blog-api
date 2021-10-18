@@ -1,13 +1,10 @@
 {
   "name": "api-blog",
   "version": "1.0.0",
-  "description": "",
   "main": ".src/index.js",
   "scripts": {
     "start": "nodemon ./src/index.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^3.2.1",
